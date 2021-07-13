@@ -370,9 +370,9 @@ function showOutput(id, name) {
         <div class="card-body my-2">
         <table class="table my-0">
             <tbody>
-            <tr><td>Start Time:</td><td class="text-right">2021-07-09 20:07:35</td></tr>
-<tr><td>Duration:</td><td class="text-right">0:00:00.063962</td></tr>
-<tr><td>Status:</td><td class="text-right">Passed:1</td></tr>
+            <tr><td>Start Time:</td><td class="text-right">2021-07-13 18:30:52</td></tr>
+<tr><td>Duration:</td><td class="text-right">0:00:00.571936</td></tr>
+<tr><td>Status:</td><td class="text-right">Passed:22 Failed:1 Errors:2</td></tr>
 
             <tr><td>Description:</td><td class="text-right">Implementation Example with:</td></tr>
             </tbody>
@@ -383,11 +383,11 @@ function showOutput(id, name) {
 
 <div style="float:left; margin-left: 10px; margin-top: 20px;">
     <p> Test Case Pie charts </p>
-    <h2 class="d-flex align-items-center mb-0 font-weight-light pass-color">1</h2>
+    <h2 class="d-flex align-items-center mb-0 font-weight-light pass-color">22</h2>
     <a>PASSED</a><br>
-    <h2 class="d-flex align-items-center mb-0 font-weight-light fail-color">0</h2>
+    <h2 class="d-flex align-items-center mb-0 font-weight-light fail-color">1</h2>
     <a>FAILED</a>
-    <h2 class="d-flex align-items-center mb-0 font-weight-light error-color">0</h2>
+    <h2 class="d-flex align-items-center mb-0 font-weight-light error-color">2</h2>
     <a>ERRORS</a><br>
     <h2 class="d-flex align-items-center mb-0 font-weight-light skip-color">0</h2>
     <a>SKIPED</a><br>
@@ -420,28 +420,621 @@ function showOutput(id, name) {
     </tr>
 </thead>
 
-<tr class='passClass'>
-    <td>get_event_list_test.GetEventListTest</td>
-    <td>1</td>
+<tr class='failClass'>
+    <td>add_event_test.AddEventTest</td>
+    <td>5</td>
+    <td>4</td>
     <td>1</td>
     <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.1',1)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c1.1',5)">Detail</a></td>
     <td>&nbsp;</td>
 </tr>
 
 <tr id='pt1.1.1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_event_all_null</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1.1')" >
+        pass</a>
+    <div id='div_pt1.1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1.1: {'status': 10021, 'message': 'parameter error'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.1.2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_event_id_alreadyexists</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1.2')" >
+        pass</a>
+    <div id='div_pt1.1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1.2: {'status': 10022, 'message': 'event id already exists'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.1.3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_event_name_alreadyexists</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1.3')" >
+        pass</a>
+    <div id='div_pt1.1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1.3: {'status': 10023, 'message': 'event name already exists'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='ft1.1.4' class='none'>
+    <td class='failCase'><div class='testcase'>test_add_event_success</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1.4')" >
+        fail</a>
+    <div id='div_ft1.1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1.4: {'status': 10022, 'message': 'event id already exists'}
+Traceback (most recent call last):
+  File "D:\pytest\interface\add_event_test.py", line 51, in test_add_event_success
+    self.assertEqual(self.result['status'],200)
+AssertionError: 10022 != 200
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.1.5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_event_timeformat</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1.5')" >
+        pass</a>
+    <div id='div_pt1.1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.1.5: {'status': 10024, 'message': 'start_time format error.It must be in YYYY-MM-DD HH:MM:SS format.'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>add_guest_test.AddGuestTest</td>
+    <td>6</td>
+    <td>6</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.2',6)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.2.1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_guest_error</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.1')" >
+        pass</a>
+    <div id='div_pt1.2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2.1: {'status': 10021, 'message': 'parameter error'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2.2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_guest_test_event_full</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.2')" >
+        pass</a>
+    <div id='div_pt1.2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2.2: {'status': 10024, 'message': 'event number is full'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2.3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_guest_test_event_null</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.3')" >
+        pass</a>
+    <div id='div_pt1.2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2.3: {'status': 10022, 'message': 'event id null'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2.4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_guest_test_event_started</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.4')" >
+        pass</a>
+    <div id='div_pt1.2.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2.4: {'status': 10025, 'message': 'event has started'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2.5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_guest_test_event_status</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.5')" >
+        pass</a>
+    <div id='div_pt1.2.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2.5: {'status': 10023, 'message': 'event status is not available'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.2.6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_add_guest_test_event_success</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.6')" >
+        pass</a>
+    <div id='div_pt1.2.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.2.6: {'status': 200, 'message': 'add guest success'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>get_event_list_test.GetEventListTest</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.3',3)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.3.1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_get_event_error</div></td>
+    <td colspan='5' align='center'>pass</td>
+    <td></td>
+</tr>
+
+<tr id='pt1.3.2' class='hiddenRow'>
     <td class='passCase'><div class='testcase'>test_get_event_null</div></td>
     <td colspan='5' align='center'>pass</td>
     <td></td>
 </tr>
 
+<tr id='pt1.3.3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_get_event_success</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3.3')" >
+        pass</a>
+    <div id='div_pt1.3.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.3.3: {'status': 200, 'message': 'success', 'data': {'id': 2, 'name': '可参加人数为0', 'limit': 0, 'status': True, 'address': '北京会展中心', 'start_time': '2021-08-20T12:00:00Z'}}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='passClass'>
+    <td>get_guest_list_test.GetGuestListTest</td>
+    <td>3</td>
+    <td>3</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c1.4',3)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.4.1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_event_id_null</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4.1')" >
+        pass</a>
+    <div id='div_pt1.4.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4.1: {'status': 10021, 'message': 'id connot be empty'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.4.2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_event_not_exitsts</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4.2')" >
+        pass</a>
+    <div id='div_pt1.4.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4.2: {'status': 10022, 'message': 'query result is empty'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.4.3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_get_event_list_success</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4.3')" >
+        pass</a>
+    <div id='div_pt1.4.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.4.3: {'status': 200, 'message': 'success', 'data': [{'realname': 'alen', 'phone': '13511001100', 'sign': True, 'Email': 'alen@mail.com'}]}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr class='errorClass'>
+    <td>user_sign_test.UerSignTest</td>
+    <td>8</td>
+    <td>6</td>
+    <td>0</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1.5',8)">Detail</a></td>
+    <td>&nbsp;</td>
+</tr>
+
+<tr id='pt1.5.1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_user_sign_error</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5.1')" >
+        pass</a>
+    <div id='div_pt1.5.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5.1: {'status': 10021, 'message': 'parameter error'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5.2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_user_sign_event_id_null</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5.2')" >
+        pass</a>
+    <div id='div_pt1.5.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5.2: {'status': 10022, 'message': 'event id null'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5.3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_user_sign_event_phone_null</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5.3')" >
+        pass</a>
+    <div id='div_pt1.5.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5.3: {'status': 10025, 'message': 'user phone null'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5.4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_user_sign_event_started</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5.4')" >
+        pass</a>
+    <div id='div_pt1.5.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5.4: {'status': 10024, 'message': 'event has started'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5.5' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_user_sign_not_participate</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5.5')" >
+        pass</a>
+    <div id='div_pt1.5.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5.5: {'status': 10026, 'message': 'user did not pacticipate in the conference'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='pt1.5.6' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_user_sign_sign_already</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5.6')" >
+        pass</a>
+    <div id='div_pt1.5.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.5.6: {'status': 10027, 'message': 'user has sign in'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='et1.5.7' class='none'>
+    <td class='errorCase'><div class='testcase'>test_user_sign_sign_success</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.5.7')" >
+        error</a>
+    <div id='div_et1.5.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.5.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+et1.5.7: Traceback (most recent call last):
+  File "D:\pytest\interface\user_sign_test.py", line 66, in test_user_sign_sign_success
+    self.result = r.json()
+  File "D:\pytest\venv\lib\site-packages\requests\models.py", line 900, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\kara\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\kara\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\kara\AppData\Local\Programs\Python\Python39\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
+<tr id='et1.5.8' class='none'>
+    <td class='errorCase'><div class='testcase'>test_user_sign_sign_success</div></td>
+    <td colspan='5' align='center'>
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.5.8')" >
+        error</a>
+    <div id='div_et1.5.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.5.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+et1.5.8: Traceback (most recent call last):
+  File "D:\pytest\interface\user_sign_test.py", line 11, in tearDown
+    print(self.result)
+AttributeError: 'UerSignTest' object has no attribute 'result'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+    </td>
+    <td></td>
+</tr>
+
 <tr id='total_row'>
     <td>Total</td>
-    <td>1</td>
-    <td class="text text-success">1</td>
-    <td class="text text-danger">0</td>
-    <td class="text text-warning">0</td>
+    <td>25</td>
+    <td class="text text-success">22</td>
+    <td class="text text-danger">1</td>
+    <td class="text text-warning">2</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
 </tr>
@@ -452,21 +1045,21 @@ function showOutput(id, name) {
     <script type="text/javascript">
 var data = [
 	{
-		value: 0,
+		value: 2,
 		color: "#f44455",
 		label: "Error",
 		labelColor: 'white',
 		labelFontSize: '16'
 	},
 	{
-		value : 0,
+		value : 1,
 		color : "#fcc100",
 		label: "Fail",
 		labelColor: 'white',
 		labelFontSize: '16'
 	},
 	{
-		value : 1,
+		value : 22,
 		color : "#5fc27e",
 		label : "Pass",
 		labelColor: 'white',

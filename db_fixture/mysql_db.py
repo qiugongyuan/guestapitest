@@ -35,7 +35,7 @@ class DB:
     #清除表数据
 
     def clear(self,table_name):
-        real_sql="delete from"+table_name+";"
+        real_sql="delete from "+table_name+" ;"
         with self.conn.cursor() as cursor:
             cursor.execute("SET FOREIGN_KEY_CHECKS=0")
             cursor.execute(real_sql)
@@ -48,7 +48,7 @@ class DB:
             table_data[key]="'"+str(table_data[key])+"'"
         key=",".join(table_data.keys())
         value=",".join(table_data.values())
-        real_sql="INSERT INTO"+table_name+"("+key+") VALUES ("+value+")"
+        real_sql="INSERT INTO "+table_name+" ("+key+") VALUES ("+value+")"
 
         with self.conn.cursor() as  cursor:
             cursor.execute(real_sql)
@@ -62,7 +62,7 @@ class DB:
 
 if __name__=='__main__':
    db=DB()
-   table_name="sign_event"
+   table_name="sign_event_new"
    data={'id':12,'name':"红米",'limit':2000,'status':1,'address':'北京会展中心','start_time':'2021-08-19 00:12:22'}
    db.clear(table_name)
    db.insert(table_name,data)
