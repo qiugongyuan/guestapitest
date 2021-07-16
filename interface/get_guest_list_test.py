@@ -17,6 +17,7 @@ class GetGuestListTest(unittest.TestCase):
 		self.result=r.json()
 		self.assertEqual(self.result['status'], 10021)
 		self.assertEqual(self.result['message'], "id connot be empty")
+
 	def test_event_not_exitsts(self):
 		r=requests.get(self.url,params={"id":'89',"phone":'15330235989'})
 		self.result=r.json()
