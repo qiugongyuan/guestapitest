@@ -5,7 +5,7 @@ import pymysql
 conn = pymysql.connect(
     host='127.0.0.1',
     user='root',
-    passwd='1234',
+    passwd='123456',
     db='jforum',
     port=3306,
     charset='utf8')
@@ -28,7 +28,7 @@ while count <= 8:
                                                              '0, " ' + useremail + '", NULL, NULL,NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,NULL, NULL, NULL, NULL, NULL,1, NULL, NULL,NULL);'
     cur.execute(sql1)
     conn.commit()
-    sql2 = 'insert into jforum_user_groups(group_id,user_id) VALUES(3,"' + str_count + '")'
+    sql2 = 'insert into jforum_user_groups(group_id,user_id) VALUES(2,"' + str_count + '")'
     cur.execute(sql2)
     conn.commit()
     print('数字' + str(count))
