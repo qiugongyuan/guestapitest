@@ -4,14 +4,14 @@ import pymysql
 conn =pymysql.connect(
     host='127.0.0.1',
     user='root',
-    passwd='1234',
+    passwd='123456',
     db='guest_test',
     port=3306,
     charset='utf8')
 cur =conn.cursor()
 count = 0
 now_time=time.time()
-while count < 10:
+while count < 500:
     count += 1
     str_count=str(count)
     realname="kara"+str_count

@@ -8,19 +8,19 @@ class UserBehavior(TaskSet):
         self.login()
 
     def login(self):
-        self.client.post("/login_action", {"username": "admin", "password": "admin123456"})
+        self.client.post("index", {"username": "admin", "password": "admin123456"})
 
     @task(2)
     def event_manage(self):
-        self.client.get("/event_manage/")
+        self.client.get("event_manage")
 
     @task(2)
     def guest_manage(self):
-        self.client.get("/guest_manage")
+        self.client.get("guest_manage")
 
     @task(1)
     def search_phone(self):
-        self.client.get("/search_phone/", params={"phone": '15330235994'})
+        self.client.get("search_phone", params={"phone": '15330235994'})
 
 
 class WebSiteUser(HttpUser):
