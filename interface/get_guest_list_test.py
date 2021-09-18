@@ -1,7 +1,11 @@
+import os
+import sys
 import unittest
+import openpyxl
 import requests
+
 from db_fixture import test_data
-import sys,os
+
 parentdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, parentdir)
 

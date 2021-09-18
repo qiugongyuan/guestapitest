@@ -11,6 +11,7 @@ class AddEventTest(unittest.TestCase):
         self.base_url = "http://127.0.0.1:8000/api/add_sec_event/"
         # app_key
         self.api_key = "&Guest-Bugmaster"
+
         # 当前时间
         now_time = time()
         print(now_time)

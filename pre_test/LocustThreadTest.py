@@ -19,7 +19,7 @@ def sign_thread(start_user, end_user):
 
 
 # 设置用户分组
-lists = {1: 5, 5: 10}
+lists = {1: 100, 100: 200,200:300,300:400,400:500}
 
 # 创造线程组
 threads = []

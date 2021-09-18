@@ -2,7 +2,6 @@ import os.path
 import sys
 import unittest
 import requests
-import self as self
 
 from db_fixture import test_data
 parentdir=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
